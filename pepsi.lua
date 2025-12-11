@@ -1,4 +1,43 @@
-RAINBOW ESP + SKELETON + RED LASER AIMBOT + FOV CIRCLE
+local Fatality = loadstring(game:HttpGet("https://raw.githubusercontent.com/4lpaca-pin/Fatality/refs/heads/main/src/source.luau"))();
+
+Fatality:Loader({
+	Name = "PEPSI",
+	Duration = 7
+});
+
+local Notification = Fatality:CreateNotifier();
+
+Notification:Notify({
+	Title = "PEPSI",
+	Content = "Hey! thanks for using this menu! credits to fatality.win for ui lib",
+	Icon = "clipboard"
+})
+
+local Window = Fatality.new({
+	Name = "PEPSI",
+	Scale = UDim2.new(0, 750, 0, 500),
+	Keybind = "Insert",
+	Expire = "never",
+});
+
+local Menu = Window:AddMenu({
+    Name = "FPS",
+    Icon = "skull"
+})
+
+local Section = Menu:AddSection({
+    Position = 'left', -- left , center , right
+    Name = "FPS"
+});
+
+Section:AddButton({
+	Name = "Aimbot & ESP",
+	Callback = function(value)
+--[[
+	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+]]
+--[[
+    RAINBOW ESP + SKELETON + RED LASER AIMBOT + FOV CIRCLE
     → Using Instance.new() instead of Drawing API
     → All GUI-based rendering
     → Wanna be Hacker XD
@@ -377,3 +416,52 @@ end)
 Players.PlayerRemoving:Connect(cleanupPlayer)
 
 print("🚀 RAINBOW ESP + SKELETON + LASER AIMBOT + FOV CIRCLE LOADED (Instance.new version)")
+	end,
+})
+
+Section:AddButton({
+	Name = "Speed ",
+	Callback = function(value)
+loadstring(game:HttpGet("https://pastebin.com/raw/DH4b3T5S"))();
+	end,
+})
+
+Section:AddButton({
+	Name = "Owl Hub",
+	Callback = function(value)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+	end,
+})
+
+local Menu = Window:AddMenu({
+    Name = "GUI",
+    Icon = "laptop-minimal"
+})
+
+local Section = Menu:AddSection({
+    Position = 'left', -- left , center , right
+    Name = "GUI"
+});
+
+Section:AddButton({
+	Name = "AnonHub 75 Games Supported OP",
+	Callback = function(value)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/sa435125/AnonHub/refs/heads/main/anonhub.lua"))();
+	end,
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
